@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whac-a-Moyaki</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #3b1964;">
+  <div id="startScreen" style="text-align: center; color: lavender;">
+   <h1>Whac-a-Moyaki</h1>
+    <p>----------------</p>
+    <h3>Welcome to whac-a-moyaki!</h2>
+    <p>Start hitting Moyakis with your Hammerlandak!</p>
+    <div id="bonk">
+      <img src="images/bonk.png">
+    </div>
+    <button onclick="startGame()" style="background-color: #7D5298; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px;">Start playing</button>
+  </div>
+
+  <div id="game" style="display: none;">
+    <div style="text-align: center; color: lavender;">
+      <h2>Your score:</h2>
+      <h2 id="score">0</h2>
+      <h2>Time Left:</h2>
+      <h2 id="time-left">60</h2>
+    </div>
+
+    <div class="grid" style="margin: 0 auto;">
+      <div class="square" id="1" style="background-color: #b37dd3;"></div>
+      <div class="square" id="2" style="background-color: #b37dd3;"></div>
+      <div class="square" id="3" style="background-color: #b37dd3;"></div>
+      <div class="square" id="4" style="background-color: #b37dd3;"></div>
+      <div class="square" id="5" style="background-color: #b37dd3;"></div>
+      <div class="square" id="6" style="background-color: #b37dd3;"></div>
+      <div class="square" id="7" style="background-color: #b37dd3;"></div>
+      <div class="square" id="8" style="background-color: #b37dd3;"></div>
+      <div class="square" id="9" style="background-color: #b37dd3;"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

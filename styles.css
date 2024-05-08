@@ -1,0 +1,60 @@
+body {
+	cursor: url("images/hammerlandak.png"), auto;
+	font-family: Arial, sans-serif;
+  }
+  
+  .grid {
+	width: 606px;
+	height: 606px;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .square {
+	height: 200px;
+	width: 200px;
+	border: solid black 1px;
+	position: relative;
+  }
+  
+  .square::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(196, 179, 224, 0.001);
+	z-index: 1;
+  }
+  
+  .hit  {
+	background-image: url("images/dedmoyaki.png");
+	background-size: cover;
+	opacity: 1;
+	position: relative;
+	z-index: 2;
+  }
+  
+  .mole {
+	background-image: url("images/fish_nad.webp");
+	background-size: cover;
+	opacity: 1;
+	position: relative;
+	z-index: 2;
+  }
+  
+  #game {
+	display: none;
+  }
+  
+  #hammerlandak {
+	margin-left: 600px;
+  }
+  
+  @keyframes boom {
+	100% {
+	  transform: rotate(1080deg) scale(1);
+	}
+  }
+  
